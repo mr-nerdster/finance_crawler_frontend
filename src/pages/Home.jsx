@@ -11,7 +11,7 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="https://localhost:3000/">
+      <Link color="inherit" href="http://localhost:3000/">
         Finance Crawler
       </Link>{" "}
       {new Date().getFullYear()}
@@ -27,8 +27,8 @@ function Home() {
         {/* <!-- Title --> */}
         <div className="row">
           <div className="col-lg-6">
-            <h1 className="title-heading">Expense Tracker</h1>
-            <p>Price is what you pay, Value is what you get.</p>
+            <h1 className="title-heading">Finance Crawler</h1>
+            <h4>Price is what you pay, Value is what you get.</h4>
 
             <a
               href="http://localhost:3000/login"
