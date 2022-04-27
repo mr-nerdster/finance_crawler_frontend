@@ -1,7 +1,7 @@
-/* body {
-  background-image: url("./images/bg.jpg");
+body {
+  background-image: url("./images/bgg.jpg");
 
-  color: white;
+  color: black;
   font-family: "Montserrat, sans-serif";
 }
 
@@ -9,7 +9,11 @@
   padding: 3% 15% 7%;
 }
 
-h1 {
+.title-img-div {
+  padding-top: 18%;
+}
+
+.title-heading {
   font-family: "Montserrat, sans-serif";
   font-size: 4.5rem;
   line-height: 1.5;
@@ -30,15 +34,15 @@ h2 {
 
 /* Download-Button */
 
-/* .download-button {
+.download-button {
   margin: 5% 3% 5% 0;
-} */
+}
 
 /* Footer-Section */
 
-/* #footer { */
-/* background-color: white; */
-/* text-align: center;
+#footer {
+background-color: white;
+ text-align: center;
   color: white;
 }
 
@@ -55,4 +59,4 @@ h2 {
   padding-bottom: 5%;
   font-family: "Montserrat";
   font-size: 1.2rem;
-}  */
+} 

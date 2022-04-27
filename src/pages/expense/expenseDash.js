@@ -21,6 +21,7 @@ import { mainListItems } from "../../components/drawer";
 import Chart from "../../components/chartDonut";
 import ExpenseStats from "./expenseDeposit";
 import ExpenseTable from "./expenseTable";
+import Deposits from "../../components/logs";
 
 function Copyright(props) {
   return (
@@ -186,7 +187,7 @@ export default function ExpenseDash() {
                     height: 240,
                   }}
                 >
-                  <ExpenseStats />
+                  <Deposits />
                 </Paper>
               </Grid>
               {/* Recent Orders */}

@@ -21,6 +21,7 @@ import { mainListItems } from "../../components/drawer";
 import Chart from "../../components/chartDonut";
 import IncomeStats from "./incomeDeposit";
 import IncomeTable from "./incomeTable";
+import Deposits from "../../components/logs";
 
 function Copyright(props) {
   return (
@@ -186,7 +187,7 @@ export default function IncomeDash() {
                     height: 240,
                   }}
                 >
-                  <IncomeStats />
+                  <Deposits />
                 </Paper>
               </Grid>
               {/* Recent Orders */}

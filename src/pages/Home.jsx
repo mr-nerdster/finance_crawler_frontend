@@ -27,7 +27,7 @@ function Home() {
         {/* <!-- Title --> */}
         <div className="row">
           <div className="col-lg-6">
-            <h1>Expense Tracker</h1>
+            <h1 className="title-heading">Expense Tracker</h1>
             <p>Price is what you pay, Value is what you get.</p>
 
             <a
@@ -35,6 +35,7 @@ function Home() {
               className="btn btn-outline-dark btn-lg download-button"
               role="button"
             >
+              <i className="fa-solid fa-arrow-pointer"></i>
               Sign In
             </a>
             <a
@@ -42,6 +43,7 @@ function Home() {
               className="btn btn-outline-dark btn-lg download-button"
               role="button"
             >
+              <i className="fa-solid fa-user-plus"></i>
               Sign Up
             </a>
             {/* <button
@@ -59,11 +61,11 @@ function Home() {
           </div>
 
           <div className="col-lg-6 title-img-div">
-            {/* <img
+            <img
               className="title-img"
-              src="images/mob.jpg"
-              alt="iphone-mockup"
-            ></img> */}
+              src="images/back.png"
+              alt="money-pic"
+            ></img>
           </div>
         </div>
       </div>
