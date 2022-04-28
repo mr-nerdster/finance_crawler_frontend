@@ -35,7 +35,7 @@ const DeleteInc = ({ row, token }) => {
     .then(function (response) {
       console.log(response.data);
       let res = response.data;
-      window.location.href = "/incomeDashboard";
+      window.location.href = "https://finance-crawler.netlify.app/incomeDashboard";
     });
 };
 

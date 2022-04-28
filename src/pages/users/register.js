@@ -40,7 +40,7 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="http://localhost:3000/">
+      <Link color="inherit" href="https://finance-crawler.netlify.app/">
         Finance Crawler
       </Link>{" "}
       {new Date().getFullYear()}
@@ -200,7 +200,8 @@ export default function Register() {
                 sx={{ mt: 3, mb: 2 }}
                 onClick={() => {
                   localStorage.clear();
-                  window.location.href = "/login";
+                  window.location.href =
+                    "https://finance-crawler.netlify.app/login";
                 }}
               >
                 Sign Up
@@ -215,7 +216,10 @@ export default function Register() {
 
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="/login" variant="body2">
+                <Link
+                  href="https://finance-crawler.netlify.app/login"
+                  variant="body2"
+                >
                   Already have an account? Sign in
                 </Link>
               </Grid>

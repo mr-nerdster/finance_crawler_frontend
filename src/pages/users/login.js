@@ -38,7 +38,7 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="http://localhost:3000/">
+      <Link color="inherit" href="https://finance-crawler.netlify.app/">
         Finance Crawler
       </Link>{" "}
       {new Date().getFullYear()}
@@ -95,7 +95,7 @@ export default function Login() {
 
   React.useEffect(() => {
     if (userAuth) {
-      navigate("/expenseDashboard");
+      navigate("https://finance-crawler.netlify.app/expenseDashboard");
     }
   });
 
@@ -180,7 +180,10 @@ export default function Login() {
             ) : null}
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="/register" variant="body2">
+                <Link
+                  href="https://finance-crawler.netlify.app/register"
+                  variant="body2"
+                >
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>

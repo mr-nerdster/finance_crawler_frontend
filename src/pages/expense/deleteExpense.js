@@ -33,7 +33,7 @@ const DeleteExp = ({ row, token }) => {
     .then(function (response) {
       console.log(response.data);
       let res = response.data;
-      window.location.href = "/expenseDashboard";
+      window.location.href = "https://finance-crawler.netlify.app/expenseDashboard";
     });
 };
 
