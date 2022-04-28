@@ -11,7 +11,7 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="https://finance-crawler.netlify.app/">
+      <Link color="inherit" href="/">
         Finance Crawler
       </Link>{" "}
       {new Date().getFullYear()}
@@ -31,7 +31,7 @@ function Home() {
             <h4>Price is what you pay, Value is what you get.</h4>
 
             <a
-              href="https://main--finance-crawler.netlify.app/login"
+              href="/login"
               className="btn btn-outline-dark btn-lg download-button"
               role="button"
             >
@@ -39,7 +39,7 @@ function Home() {
               Sign In
             </a>
             <a
-              href="https://main--finance-crawler.netlify.app/register"
+              href="/register"
               className="btn btn-outline-dark btn-lg download-button"
               role="button"
             >

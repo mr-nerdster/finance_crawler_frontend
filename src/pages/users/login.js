@@ -95,7 +95,7 @@ export default function Login() {
 
   React.useEffect(() => {
     if (userAuth) {
-      navigate("https://finance-crawler.netlify.app/expenseDashboard");
+      navigate("/expenseDashboard");
     }
   });
 
@@ -180,10 +180,7 @@ export default function Login() {
             ) : null}
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link
-                  href="https://finance-crawler.netlify.app/register"
-                  variant="body2"
-                >
+                <Link href="/register" variant="body2">
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>

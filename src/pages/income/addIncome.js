@@ -43,7 +43,7 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="https://finance-crawler.netlify.app/">
+      <Link color="inherit" href="/">
         Finance Crawler
       </Link>{" "}
       {new Date().getFullYear()}
@@ -100,7 +100,7 @@ export default function AddIncome() {
 
   React.useEffect(() => {
     if (income) {
-      navigate("https://finance-crawler.netlify.app/incomeDashboard");
+      navigate("/incomeDashboard");
     }
   });
 
