@@ -27,7 +27,7 @@ function Home() {
         {/* <!-- Title --> */}
         <div className="row">
           <div className="col-lg-6">
-            <h1 className="title-heading">Expense Tracker</h1>
+            <h1 className="title-heading">Finance Crawler</h1>
             <p>Price is what you pay, Value is what you get.</p>
 
             <a
