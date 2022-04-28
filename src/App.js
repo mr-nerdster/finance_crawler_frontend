@@ -18,36 +18,80 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/expenseDashboard" element={<ProtectedRoute />}>
-          <Route exact path="/expenseDashboard" element={<ExpenseDash />} />
+        <Route
+          exact
+          path="https://finance-crawler.netlify.app/expenseDashboard"
+          element={<ProtectedRoute />}
+        >
           <Route
             exact
-            path="/expenseDashboard/editExpense"
+            path="https://finance-crawler.netlify.app/expenseDashboard"
+            element={<ExpenseDash />}
+          />
+          <Route
+            exact
+            path="https://finance-crawler.netlify.app/expenseDashboard/editExpense"
             element={<EditExpense />}
           />
         </Route>
 
-        <Route exact path="/addExpense" element={<ProtectedRoute />}>
-          <Route exact path="/addExpense" element={<AddExpense />} />
-        </Route>
-
-        <Route exact path="/incomeDashboard" element={<ProtectedRoute />}>
-          <Route exact path="/incomeDashboard" element={<IncomeDash />} />
+        <Route
+          exact
+          path="https://finance-crawler.netlify.app/addExpense"
+          element={<ProtectedRoute />}
+        >
           <Route
             exact
-            path="/incomeDashboard/editIncome"
+            path="https://finance-crawler.netlify.app/addExpense"
+            element={<AddExpense />}
+          />
+        </Route>
+
+        <Route
+          exact
+          path="https://finance-crawler.netlify.app/incomeDashboard"
+          element={<ProtectedRoute />}
+        >
+          <Route
+            exact
+            path="https://finance-crawler.netlify.app/incomeDashboard"
+            element={<IncomeDash />}
+          />
+          <Route
+            exact
+            path="https://finance-crawler.netlify.app/incomeDashboard/editIncome"
             element={<EditIncome />}
           />
         </Route>
 
-        <Route exact path="/addIncome" element={<ProtectedRoute />}>
-          <Route exact path="/addIncome" element={<AddIncome />} />
+        <Route
+          exact
+          path="https://finance-crawler.netlify.app/addIncome"
+          element={<ProtectedRoute />}
+        >
+          <Route
+            exact
+            path="https://finance-crawler.netlify.app/addIncome"
+            element={<AddIncome />}
+          />
         </Route>
 
-        <Route exact path="/login" element={<Login />} />
-        <Route exact path="/register" element={<Register />} />
+        <Route
+          exact
+          path="https://finance-crawler.netlify.app/login"
+          element={<Login />}
+        />
+        <Route
+          exact
+          path="https://finance-crawler.netlify.app/register"
+          element={<Register />}
+        />
 
-        <Route exact path="/" element={<Home />} />
+        <Route
+          exact
+          path="https://finance-crawler.netlify.app/"
+          element={<Home />}
+        />
       </Routes>
     </BrowserRouter>
   );
