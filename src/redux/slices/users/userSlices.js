@@ -14,7 +14,7 @@ export const loginuserAction = createAsyncThunk(
     try {
       //make http call here
       const { data } = await axios.post(
-        `http://localhost:8080/api/users/login`,
+        `https://finance-crawler-ah.herokuapp.com/api/users/login`,
         payload,
         config
       );
@@ -59,7 +59,7 @@ export const registerUserAction = createAsyncThunk(
     try {
       //make http call here
       const { data } = await axios.post(
-        `http://localhost:8080/api/users/register`,
+        `https://finance-crawler-ah.herokuapp.com/api/users/register`,
         payload,
         config
       );

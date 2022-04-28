@@ -18,7 +18,7 @@ export const createExp = createAsyncThunk(
     try {
       //make http call here
       const { data } = await axios.post(
-        `http://localhost:8080/api/expense`,
+        `https://finance-crawler-ah.herokuapp.com/api/expense`,
         payload,
         config
       );
@@ -50,7 +50,9 @@ export const updateExp = createAsyncThunk(
     try {
       //make http call here
       const { data } = await axios.put(
-        `http://localhost:8080/api/expense/` + payload?.id + "/update",
+        `https://finance-crawler-ah.herokuapp.com/api/expense/` +
+          payload?.id +
+          "/update",
         payload,
         config
       );
@@ -81,7 +83,8 @@ export const fetchAllExp = createAsyncThunk(
     try {
       //make http call here
       const { data } = await axios.get(
-        `http://localhost:8080/api/expense/all?page=` + payload,
+        `https://finance-crawler-ah.herokuapp.com/api/expense/all?page=` +
+          payload,
         config
       );
       return data;
@@ -111,7 +114,7 @@ export const fetchSingleExp = createAsyncThunk(
     try {
       //make http call here
       const { data } = await axios.get(
-        `http://localhost:8080/api/expense/` +
+        `https://finance-crawler-ah.herokuapp.com/api/expense/` +
           payload?.id +
           "?page=" +
           payload?.page,
@@ -144,7 +147,8 @@ export const fetchSingleExpwop = createAsyncThunk(
     try {
       //make http call here
       const { data } = await axios.get(
-        `http://localhost:8080/api/expense/wop/` + payload?.id,
+        `https://finance-crawler-ah.herokuapp.com/api/expense/wop/` +
+          payload?.id,
         config
       );
       return data;
@@ -174,7 +178,9 @@ export const deleteExp = createAsyncThunk(
     try {
       //make http call here
       const { data } = await axios.delete(
-        `http://localhost:8080/api/expense/` + payload?.id + "/delete",
+        `https://finance-crawler-ah.herokuapp.com/api/expense/` +
+          payload?.id +
+          "/delete",
         payload,
         config
       );

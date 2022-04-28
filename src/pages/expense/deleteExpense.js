@@ -14,7 +14,10 @@ const DeleteExp = ({ row, token }) => {
   // console.log(token);
   axios({
     method: "delete",
-    url: "http://localhost:8080/api/expense/" + row?._id + "/delete",
+    url:
+      "https://finance-crawler-ah.herokuapp.com/api/expense/" +
+      row?._id +
+      "/delete",
     headers: {
       "Content-Type": "application/json",
       Authorization: "Bearer:" + token,
