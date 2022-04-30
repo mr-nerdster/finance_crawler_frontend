@@ -58,7 +58,7 @@ const theme = createTheme();
 export default function EditIncome() {
   const { state } = useLocation();
   // console.log(state);
-  // const navigate = useNavigate(); // for redirect
+  const navigate = useNavigate(); // for redirect
   const dispatch = useDispatch();
   const getState = useSelector((state) => state?.income);
   // console.log(getState);
