@@ -28,11 +28,21 @@ import { updateExp } from "../../redux/slices/expense/expenseSlices";
 
 //form validation
 const validateForm = Yup.object({
-  title: Yup.string().required("Title is required."),
+  title: Yup.string()
+    .required("Title is required.")
+    .matches(/^(?!\s)[\w\s-]*$/, "* This field cannot contain only blankspaces"),
 
-  description: Yup.string().required("Description is required."),
+  description: Yup.string()
+    .required("Description is required.")
+    .matches(/^(?!\s)[\w\s-]*$/, "* This field cannot contain only blankspaces"),
 
-  amount: Yup.number().required("Amount is required."),
+  amount: Yup.number()
+    .required("Amount is required.")
+    .test(
+      "Is positive?",
+      "ERROR: The number must be greater than 0!",
+      (value) => value > 0
+    ),
 });
 
 function Copyright(props) {

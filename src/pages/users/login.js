@@ -180,9 +180,9 @@ export default function Login() {
             ) : null}
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="/register" variant="body2">
+                <a href="/register" variant="body2">
                   {"Don't have an account? Sign Up"}
-                </Link>
+                </a>
               </Grid>
             </Grid>
           </Box>

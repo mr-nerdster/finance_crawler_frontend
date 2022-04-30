@@ -5,13 +5,6 @@ import { useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
 
 const DeleteExp = ({ row, token }) => {
-  const config = {
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: "Bearer:" + token,
-    },
-  };
-  // console.log(token);
   axios({
     method: "delete",
     url:
@@ -31,7 +24,7 @@ const DeleteExp = ({ row, token }) => {
       // window.location.href = "/table";
     })
     .then(function (response) {
-      console.log(response.data);
+      // console.log(response.data);
       let res = response.data;
       window.location.href = "/expenseDashboard";
     });

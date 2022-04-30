@@ -95,11 +95,11 @@ export default function Register() {
     validationSchema: validateForm,
   });
 
-  // React.useEffect(() => {
-  //   if (isRegistered) {
-  //     navigate("/login");
-  //   }
-  // });
+  React.useEffect(() => {
+    if (isRegistered) {
+      navigate("/login");
+    } else if (userAppErr) formik.resetForm();
+  });
 
   return (
     <ThemeProvider theme={theme}>
@@ -199,8 +199,7 @@ export default function Register() {
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
                 onClick={() => {
-                  localStorage.clear();
-                  window.location.href = "/login";
+                  // localStorage.clear();
                 }}
               >
                 Sign Up

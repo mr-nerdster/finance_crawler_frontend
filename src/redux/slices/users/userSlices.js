@@ -101,7 +101,7 @@ const usersSlices = createSlice({
     });
     //handle rejected state
     builder.addCase(loginuserAction.rejected, (state, action) => {
-      console.log(action);
+      
       state.userLoading = false;
       state.userAppErr = action?.payload?.msg;
       state.userServerErr = action?.error?.msg;
@@ -115,7 +115,7 @@ const usersSlices = createSlice({
     });
     //handle success state
     builder.addCase(registerUserAction.fulfilled, (state, action) => {
-      console.log(action);
+      // console.log(action);
       state.isRegistered = true;
       state.userLoading = false;
       state.userAppErr = undefined;

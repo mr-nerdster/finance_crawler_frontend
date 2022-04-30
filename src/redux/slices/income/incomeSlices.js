@@ -8,7 +8,7 @@ export const createInc = createAsyncThunk(
     // GET TOKEN FROM STATE
     const state = getState();
     const token = state?.users?.userAuth?.token;
-    // console.log("Bearer: " + token);
+    
     const config = {
       headers: {
         "Content-Type": "application/json",
@@ -39,8 +39,7 @@ export const updateInc = createAsyncThunk(
     // GET TOKEN FROM STATE
     const state = getState();
     const token = state?.users?.userAuth?.token;
-    // console.log(payload.data + "\n" + typeof payload);
-    // console.log("Bearer: " + token);
+    
     const config = {
       headers: {
         "Content-Type": "application/json",
@@ -73,7 +72,7 @@ export const fetchSingleInc = createAsyncThunk(
     // GET TOKEN FROM STATE
     const state = getState();
     const token = state?.users?.userAuth?.token;
-    // console.log("Bearer: " + token);
+    
     const config = {
       headers: {
         "Content-Type": "application/json",
@@ -106,7 +105,7 @@ export const fetchSingleIncwop = createAsyncThunk(
     // GET TOKEN FROM STATE
     const state = getState();
     const token = state?.users?.userAuth?.token;
-    // console.log("Bearer: " + token);
+    
     const config = {
       headers: {
         "Content-Type": "application/json",
