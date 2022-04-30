@@ -61,25 +61,20 @@ export const mainListItems = (
         <ListItemText primary="Expense List" />
       </ListItemButton>
     </a>
-    <a
-      href="/"
+    <a href="/">
+      <button
+        style={{ border: "none", background: "none", outline: "none" }}
+        onClick={() => {
+          localStorage.clear();
+        }}
       >
-        <button
-      style={{borden:"none", background:"none", outline:"none"}}
-      onClick={() => {localStorage.clear();}}
-      >
-    <ListItemButton>
-      <ListItemIcon>
-        <LogoutOutlinedIcon />
-      </ListItemIcon>
-        
-        
-
-        LogOut
-        
-      
-    </ListItemButton>
-    </button>
+        <ListItemButton>
+          <ListItemIcon>
+            <LogoutOutlinedIcon />
+          </ListItemIcon>
+          LogOut
+        </ListItemButton>
+      </button>
     </a>
   </React.Fragment>
 );
