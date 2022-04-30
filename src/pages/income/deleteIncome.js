@@ -15,7 +15,10 @@ const DeleteInc = ({ row, token }) => {
   // console.log(token);
   axios({
     method: "delete",
-    url: "http://localhost:8080/api/income/" + row?._id + "/delete",
+    url:
+      "https://finance-crawler-ah.herokuapp.com/api/income/" +
+      row?._id +
+      "/delete",
     headers: {
       "Content-Type": "application/json",
       Authorization: "Bearer:" + token,
@@ -32,7 +35,7 @@ const DeleteInc = ({ row, token }) => {
     .then(function (response) {
       console.log(response.data);
       let res = response.data;
-      window.location.href = "/incomeDashboard";
+      window.location.href = "https://finance-crawler.netlify.app/incomeDashboard";
     });
 };
 

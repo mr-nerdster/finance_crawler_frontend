@@ -1,6 +1,12 @@
+
 # Finance Crawler Frontend
 
 This presentation layer is coupled with server side whose repository can be found at : https://github.com/NightmareNight-em/finance_crawler_backend
+=======
+# Finance Crawler frontend
+
+This frontend is coupled with server side whose repository can be found at : https://github.com/NightmareNight-em/finance_crawler_backend
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

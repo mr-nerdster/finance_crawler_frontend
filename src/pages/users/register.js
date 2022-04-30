@@ -40,7 +40,7 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="http://localhost:3000/">
+      <Link color="inherit" href="/">
         Finance Crawler
       </Link>{" "}
       {new Date().getFullYear()}
@@ -206,6 +206,12 @@ export default function Register() {
                 Sign Up
               </Button>
             )}
+
+            {/* {isRegistered ? (
+              <div className="alert alert-info" style={{ textAlign: "center" }}>
+                {isRegistered.msg}
+              </div>
+            ) : null} */}
 
             {userAppErr || userServerErr ? (
               <div className="alert alert-info" style={{ textAlign: "center" }}>

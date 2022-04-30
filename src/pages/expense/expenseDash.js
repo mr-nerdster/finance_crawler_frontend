@@ -21,6 +21,7 @@ import { mainListItems } from "../../components/drawer";
 import Chart from "../../components/chartDonut";
 import ExpenseStats from "./expenseDeposit";
 import ExpenseTable from "./expenseTable";
+import Deposits from "../../components/logs";
 
 function Copyright(props) {
   return (
@@ -31,7 +32,7 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="http://localhost:3000/">
+      <Link color="inherit" href="/">
         Finance Crawler
       </Link>{" "}
       {new Date().getFullYear()}
@@ -125,11 +126,11 @@ export default function ExpenseDash() {
             >
               Dashboard
             </Typography>
-            <IconButton color="inherit">
+            {/* <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
                 <NotificationsIcon />
               </Badge>
-            </IconButton>
+            </IconButton> */}
           </Toolbar>
         </AppBar>
         <Drawer variant="permanent" open={open}>
@@ -186,7 +187,7 @@ export default function ExpenseDash() {
                     height: 240,
                   }}
                 >
-                  <ExpenseStats />
+                  <Deposits />
                 </Paper>
               </Grid>
               {/* Recent Orders */}

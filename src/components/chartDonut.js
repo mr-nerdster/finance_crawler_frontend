@@ -93,8 +93,6 @@ export default function Chart() {
     res.push({ month: key, expense: value, income: mapI.get(key) });
   }
 
-  
-
   // let collectionI = expenseListwop?.map((x) => ({
   //   month: x.createdAt.substring(0, x.createdAt.indexOf("T")).split("-")[1],
   //   expense: x.amount,
@@ -116,28 +114,32 @@ export default function Chart() {
 
   // console.log(objI);
 
-  return (
-  <React.Fragment>
-    <Title>Expense & Income Month wise</Title>
-    <ResponsiveContainer>
-      <LineChart
-        data={res}
-        margin={{
-          top: 16,
-          right: 16,
-          bottom: 0,
-          left: 24,
-        }}
-      >
-        <XAxis dataKey="month" interval={"preserveStartEnd"} />
-        <YAxis></YAxis>
-        <Legend />
-        <Tooltip />
-        <Line dataKey="income" stroke="black" activeDot={{ r: 8 }} />
-        <Line dataKey="expense" stroke="red" activeDot={{ r: 8 }} />
-      </LineChart>
-    </ResponsiveContainer>
-  </React.Fragment>
+  return l1 || loading ? (
+    <h1>Loading ...</h1>
+  ) : a1 || s1 || appErr || serverErr ? (
+    <h1>Error</h1>
+  ) : (
+    <React.Fragment>
+      <Title>Expense & Income Month wise</Title>
+      <ResponsiveContainer>
+        <LineChart
+          data={res}
+          margin={{
+            top: 16,
+            right: 16,
+            bottom: 0,
+            left: 24,
+          }}
+        >
+          <XAxis dataKey="month" interval={"preserveStartEnd"} />
+          <YAxis></YAxis>
+          <Legend />
+          <Tooltip />
+          <Line dataKey="income" stroke="black" activeDot={{ r: 8 }} />
+          <Line dataKey="expense" stroke="red" activeDot={{ r: 8 }} />
+        </LineChart>
+      </ResponsiveContainer>
+    </React.Fragment>
   );
 }
 

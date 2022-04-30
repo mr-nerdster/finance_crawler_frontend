@@ -18,7 +18,7 @@ export const createInc = createAsyncThunk(
     try {
       //make http call here
       const { data } = await axios.post(
-        `http://localhost:8080/api/income`,
+        `https://finance-crawler-ah.herokuapp.com/api/income`,
         payload,
         config
       );
@@ -50,7 +50,9 @@ export const updateInc = createAsyncThunk(
     try {
       //make http call here
       const { data } = await axios.put(
-        `http://localhost:8080/api/income/` + payload?.id + "/update",
+        `https://finance-crawler-ah.herokuapp.com/api/income/` +
+          payload?.id +
+          "/update",
         payload,
         config
       );
@@ -81,7 +83,7 @@ export const fetchSingleInc = createAsyncThunk(
     try {
       //make http call here
       const { data } = await axios.get(
-        "http://localhost:8080/api/income/" +
+        "https://finance-crawler-ah.herokuapp.com/api/income/" +
           payload?.id +
           "?page=" +
           payload?.page,
@@ -114,7 +116,8 @@ export const fetchSingleIncwop = createAsyncThunk(
     try {
       //make http call here
       const { data } = await axios.get(
-        "http://localhost:8080/api/income/wop/" + payload?.id,
+        "https://finance-crawler-ah.herokuapp.com/api/income/wop/" +
+          payload?.id,
         config
       );
       return data;

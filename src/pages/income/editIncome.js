@@ -44,7 +44,7 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="http://localhost:3000/">
+      <Link color="inherit" href="/">
         Finance Crawler
       </Link>{" "}
       {new Date().getFullYear()}
@@ -58,7 +58,7 @@ const theme = createTheme();
 export default function EditIncome() {
   const { state } = useLocation();
   // console.log(state);
-  // const navigate = useNavigate(); // for redirect
+  const navigate = useNavigate(); // for redirect
   const dispatch = useDispatch();
   const getState = useSelector((state) => state?.income);
   // console.log(getState);
@@ -105,11 +105,11 @@ export default function EditIncome() {
     validationSchema: validateForm,
   });
 
-  // React.useEffect(() => {
-  //   if (expenseUpdated) {
-  //     navigate("/dashboard");
-  //   }
-  // });
+  React.useEffect(() => {
+    if (incomeUpdated) {
+      navigate("/incomeDashboard");
+    }
+  });
 
   return (
     <ThemeProvider theme={theme}>
