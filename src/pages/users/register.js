@@ -95,11 +95,11 @@ export default function Register() {
     validationSchema: validateForm,
   });
 
-  React.useEffect(() => {
-    if (isRegistered.msg === "User Created") {
-      navigate("/login");
-    }
-  });
+  // React.useEffect(() => {
+  //   if (isRegistered) {
+  //     navigate("/login");
+  //   }
+  // });
 
   return (
     <ThemeProvider theme={theme}>
@@ -200,17 +200,18 @@ export default function Register() {
                 sx={{ mt: 3, mb: 2 }}
                 onClick={() => {
                   localStorage.clear();
+                  windows.location.href = "/login";
                 }}
               >
                 Sign Up
               </Button>
             )}
 
-            {isRegistered ? (
+            {/* {isRegistered ? (
               <div className="alert alert-info" style={{ textAlign: "center" }}>
                 {isRegistered.msg}
               </div>
-            ) : null}
+            ) : null} */}
 
             {userAppErr || userServerErr ? (
               <div className="alert alert-info" style={{ textAlign: "center" }}>
