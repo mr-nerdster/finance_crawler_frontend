@@ -200,7 +200,7 @@ export default function Register() {
                 sx={{ mt: 3, mb: 2 }}
                 onClick={() => {
                   localStorage.clear();
-                  windows.location.href = "/login";
+                  window.location.href = "/login";
                 }}
               >
                 Sign Up
