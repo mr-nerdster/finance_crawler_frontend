@@ -29,9 +29,9 @@ import BackButton from "../../components/backButton";
 
 //form validation
 const validateForm = Yup.object({
-  title: Yup.string().required("Title is required.").matches(/^(?!\s)[\w\s-]*$/, '* This field cannot contain only blankspaces'),
+  title: Yup.string().required("Title is required.").matches(/^(?!\s)[\w\s-]*$/, 'This field cannot start with a blankspace.'),
 
-  description: Yup.string().required("Description is required.").matches(/^(?!\s)[\w\s-]*$/, '* This field cannot contain only blankspaces'),
+  description: Yup.string().required("Description is required.").matches(/^(?!\s)[\w\s-]*$/, 'This field cannot start with a blankspace.'),
 
   amount: Yup.number().required("Amount is required.").test(
     'Is positive?', 
