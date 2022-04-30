@@ -64,6 +64,10 @@ export const mainListItems = (
     <a
       href="/"
       >
+        <button
+      style={{borden:"none", background:"none", outline:"none"}}
+      onClick={() => {localStorage.clear();}}
+      >
     <ListItemButton>
       <ListItemIcon>
         <LogoutOutlinedIcon />
@@ -75,6 +79,7 @@ export const mainListItems = (
         
       
     </ListItemButton>
+    </button>
     </a>
   </React.Fragment>
 );
