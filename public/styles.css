@@ -38,6 +38,13 @@ h2 {
   margin: 5% 3% 5% 0;
 }
 
+/* Back Button */
+
+.back-button {
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
 /* Footer-Section */
 
 #footer {
