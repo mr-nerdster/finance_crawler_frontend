@@ -26,6 +26,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { mainListItems } from "../../components/drawer";
 import { updateInc } from "../../redux/slices/income/incomeSlices";
 
+import BackButton from "../../components/backButton";
+
 //form validation
 const validateForm = Yup.object({
   title: Yup.string().required("Title is required."),
@@ -113,6 +115,7 @@ export default function EditIncome() {
 
   return (
     <ThemeProvider theme={theme}>
+    <BackButton page={"/incomeDashboard"}/>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
