@@ -25,6 +25,8 @@ import { useNavigate } from "react-router-dom";
 import { createExp } from "../../redux/slices/expense/expenseSlices";
 import { mainListItems } from "../../components/drawer";
 
+import BackButton from "../../components/backButton";
+
 //form validation
 const validateForm = Yup.object({
   title: Yup.string().required("Title is required.").matches(/^(?!\s)[\w\s-]*$/, '* This field cannot contain only blankspaces'),
@@ -110,6 +112,7 @@ export default function AddExpense() {
 
   return (
     <ThemeProvider theme={theme}>
+    <BackButton page={"/expenseDashboard"}/>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box

@@ -26,6 +26,9 @@ import { createExp } from "../../redux/slices/expense/expenseSlices";
 import { mainListItems } from "../../components/drawer";
 import { updateExp } from "../../redux/slices/expense/expenseSlices";
 
+import BackButton from "../../components/backButton";
+
+
 //form validation
 const validateForm = Yup.object({
   title: Yup.string()
@@ -123,6 +126,7 @@ export default function EditExpense() {
 
   return (
     <ThemeProvider theme={theme}>
+    <BackButton page={"/expenseDashboard"}/>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box

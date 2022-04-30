@@ -25,6 +25,9 @@ import { useNavigate } from "react-router-dom";
 import { createInc } from "../../redux/slices/income/incomeSlices";
 import { mainListItems } from "../../components/drawer";
 
+import BackButton from "../../components/backButton";
+
+
 //form validation
 const validateForm = Yup.object({
   title: Yup.string().required("Title is required.").matches(/^(?!\s)[\w\s-]*$/, '* This field cannot contain only blankspaces'),
@@ -110,6 +113,7 @@ export default function AddIncome() {
 
   return (
     <ThemeProvider theme={theme}>
+    <BackButton page={"/incomeDashboard"}/>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box

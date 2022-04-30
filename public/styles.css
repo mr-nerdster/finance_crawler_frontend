@@ -38,6 +38,13 @@ h2 {
   margin: 5% 3% 5% 0;
 }
 
+/* Back Button */
+
+.back-button {
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
 /* Footer-Section */
 
 #footer {
@@ -59,4 +66,4 @@ background-color: white;
   padding-bottom: 5%;
   font-family: "Montserrat";
   font-size: 1.2rem;
-} 
+}

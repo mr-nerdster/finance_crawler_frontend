@@ -27,23 +27,31 @@ function Home() {
         {/* <!-- Title --> */}
         <div className="row">
           <div className="col-lg-6">
+
             <h1 className="title-heading">Finance Crawler</h1>
             <h4>Price is what you pay, Value is what you get.</h4>
+
 
             <a
               href="/login"
               className="btn btn-outline-dark btn-lg download-button"
               role="button"
             >
-              <i className="fa-solid fa-arrow-pointer"></i>
+
+            <i className="fa-solid fa-arrow-pointer"></i>
+
+              
               Sign In
             </a>
             <a
               href="/register"
               className="btn btn-outline-dark btn-lg download-button"
               role="button"
+
+
             >
               <i className="fa-solid fa-user-plus"></i>
+
               Sign Up
             </a>
             {/* <button
