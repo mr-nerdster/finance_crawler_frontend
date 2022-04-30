@@ -105,11 +105,11 @@ export default function EditIncome() {
     validationSchema: validateForm,
   });
 
-  // React.useEffect(() => {
-  //   if (expenseUpdated) {
-  //     navigate("/dashboard");
-  //   }
-  // });
+  React.useEffect(() => {
+    if (incomeUpdated) {
+      navigate("/incomeDashboard");
+    }
+  });
 
   return (
     <ThemeProvider theme={theme}>
