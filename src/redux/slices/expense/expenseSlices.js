@@ -8,7 +8,7 @@ export const createExp = createAsyncThunk(
     // GET TOKEN FROM STATE
     const state = getState();
     const token = state?.users?.userAuth?.token;
-    
+
     const config = {
       headers: {
         "Content-Type": "application/json",
@@ -39,7 +39,7 @@ export const updateExp = createAsyncThunk(
     // GET TOKEN FROM STATE
     const state = getState();
     const token = state?.users?.userAuth?.token;
-    
+
     const config = {
       headers: {
         "Content-Type": "application/json",
@@ -72,7 +72,7 @@ export const fetchAllExp = createAsyncThunk(
     // GET TOKEN FROM STATE
     const state = getState();
     const token = state?.users?.userAuth?.token;
-    
+
     const config = {
       headers: {
         "Content-Type": "application/json",
@@ -103,7 +103,7 @@ export const fetchSingleExp = createAsyncThunk(
     // GET TOKEN FROM STATE
     const state = getState();
     const token = state?.users?.userAuth?.token;
-    
+
     const config = {
       headers: {
         "Content-Type": "application/json",
@@ -136,7 +136,7 @@ export const fetchSingleExpwop = createAsyncThunk(
     // GET TOKEN FROM STATE
     const state = getState();
     const token = state?.users?.userAuth?.token;
-    
+
     const config = {
       headers: {
         "Content-Type": "application/json",
@@ -167,7 +167,7 @@ export const deleteExp = createAsyncThunk(
     // GET TOKEN FROM STATE
     const state = getState();
     const token = state?.users?.userAuth?.token;
-    
+
     const config = {
       headers: {
         "Content-Type": "application/json",
@@ -220,7 +220,6 @@ const expenseSlices = createSlice({
 
     //handle rejected state
     builder.addCase(createExp.rejected, (state, action) => {
-      console.log(action);
       state.loading = false;
       state.appErr = action?.payload?.msg;
       state.serverErr = action?.error?.msg;

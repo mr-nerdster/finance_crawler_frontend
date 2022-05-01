@@ -20,7 +20,6 @@ const DeleteExp = ({ row, token }) => {
     },
   })
     .catch(function (error) {
-      console.log(error);
       // window.location.href = "/table";
     })
     .then(function (response) {

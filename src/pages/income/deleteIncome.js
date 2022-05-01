@@ -22,7 +22,7 @@ const DeleteInc = ({ row, token }) => {
     },
   })
     .catch(function (error) {
-      console.log(error);
+      
       Alert.alert(error);
       // window.location.href = "/table";
     })
