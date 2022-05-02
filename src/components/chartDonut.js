@@ -115,7 +115,11 @@ export default function Chart() {
   // console.log(objI);
 
   return l1 || loading ? (
-    <h1>Loading ...</h1>
+    <img
+      src={require("../images/bounce.gif")}
+      alt="cash"
+      style={{ height: "80%", width: "50%", alignSelf: "center" }}
+    />
   ) : a1 || s1 || appErr || serverErr ? (
     <h1>Error</h1>
   ) : (

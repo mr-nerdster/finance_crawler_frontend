@@ -79,7 +79,11 @@ export default function ExpenseTable() {
           </TableHead>
           <TableBody>
             {loading ? (
-              <h2>Loading...</h2>
+              <img
+                src={require("../../images/expense.gif")}
+                alt="cash"
+                style={{ height: "80%", width: "50%", alignSelf: "center" }}
+              />
             ) : appErr || serverErr ? (
               <h2>
                 {appErr} {serverErr}

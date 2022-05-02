@@ -77,7 +77,7 @@ export default function IncomeTable() {
           </TableHead>
           <TableBody>
             {loading ? (
-              <h2>Loading...</h2>
+              <img src={require("../../images/cash.gif")} alt="cash"/>
             ) : appErr || serverErr ? (
               <h2>
                 {appErr} {serverErr}
