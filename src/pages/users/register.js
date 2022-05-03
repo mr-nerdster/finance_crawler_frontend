@@ -98,7 +98,7 @@ export default function Register() {
   React.useEffect(() => {
     if (isRegistered) {
       navigate("/login");
-    } else if (userAppErr) formik.resetForm();
+    }
   });
 
   return (
