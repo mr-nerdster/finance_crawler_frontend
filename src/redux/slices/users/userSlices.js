@@ -101,7 +101,6 @@ const usersSlices = createSlice({
     });
     //handle rejected state
     builder.addCase(loginuserAction.rejected, (state, action) => {
-      
       state.userLoading = false;
       state.userAppErr = action?.payload?.msg;
       state.userServerErr = action?.error?.msg;

@@ -6,7 +6,6 @@ import axios from "axios";
 import { Alert } from "react-native";
 
 const DeleteInc = ({ row, token }) => {
-  
   axios({
     method: "delete",
     url:
@@ -22,14 +21,14 @@ const DeleteInc = ({ row, token }) => {
     },
   })
     .catch(function (error) {
-      
       Alert.alert(error);
       // window.location.href = "/table";
     })
     .then(function (response) {
       // console.log(response.data);
       let res = response.data;
-      window.location.href = "https://finance-crawler.netlify.app/incomeDashboard";
+      window.location.href =
+        "https://finance-crawler.netlify.app/incomeDashboard";
     });
 };
 
