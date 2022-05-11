@@ -42,7 +42,7 @@ jobs:
         context: ./
         file: ./Dockerfile
         push: true
-        tags: docker4harshit/finance-crawler:latest
+        tags: nerdster/finance-crawler-frontend:latest
 
     - name: Image Digest
       run: echo ${{ steps.docker_build.outputs.digest }}
