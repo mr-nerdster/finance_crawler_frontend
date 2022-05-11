@@ -55,7 +55,7 @@ jobs:
       with:
         urls: |
           https://finance-crawler.netlify.app/
-          
+          https://finance-crawler.netlify.app/expenseDashboard
         budgetPath: ./budget.json # test performance budgets
         uploadArtifacts: true # save results as an action artifacts
         temporaryPublicStorage: true # upload lighthouse report to the temporary storage
